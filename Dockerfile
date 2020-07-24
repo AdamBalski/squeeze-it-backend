@@ -11,4 +11,4 @@ EXPOSE 8080/tcp
 WORKDIR /
 ADD target/*.jar /
 
-ENTRYPOINT jar -jar *.jar
+ENTRYPOINT java -jar *.jar
