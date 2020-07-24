@@ -19,7 +19,7 @@ public class Service {
     }
 
     public MinifiedDto getMinified(String original) {
-        if(Storage.originalToMinified.containsValue(original)) {
+        if(Storage.originalToMinified.containsKey(original)) {
             String minified = Storage.originalToMinified.get(original);
             return new MinifiedDto(minified);
         }
