@@ -3,6 +3,7 @@ package com.squeezeit.squeezeitbackend.controller;
 import com.squeezeit.squeezeitbackend.dto.MinifiedDto;
 import com.squeezeit.squeezeitbackend.dto.OriginalDto;
 import com.squeezeit.squeezeitbackend.service.Service;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,6 +14,7 @@ import org.springframework.web.server.ResponseStatusException;
  * @author Adam Balski
  */
 @RestController
+@CrossOrigin(origins = "http://localhost:8081")
 public class Controller {
     private final Service service;
 
