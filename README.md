@@ -9,7 +9,7 @@ mvn clean verify
 Open a `*.jar` file in target directory
 
 
-### To make docker image (after 'To build')
+### To make a docker image (after 'To build')
 ```shell
 docker build -t squeeze-it-backend:latest -t squeeze-it-backend:{{VERSION}} .
 ```
